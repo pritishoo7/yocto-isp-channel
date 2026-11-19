@@ -9,7 +9,7 @@
 ## 1. Executive Summary & Track Choice Justification
 
 ### Why Track Q (`qemuarm64`) Was Selected
-Track Q (`qemuarm64`) was chosen because no physical Raspberry Pi 4/5 or MIPI CSI-2 camera module was on hand, aligning with the assignment's explicit rule against purchasing hardware. Beyond accessibility, Track Q exercises the full camera firmware software stack:
+Track Q (`qemuarm64`) was chosen because no physical Raspberry Pi 4/5. Track Q exercises the full camera firmware software stack:
 1. **Kernel-to-Userspace Media Bring-Up:** Enabling the kernel's Virtual Media Controller (`CONFIG_VIDEO_VIMC=y`) and configuring `libcamera`'s `vimc` pipeline handler and IPA module (`-Dpipelines=vimc -Dipas=vimc`).
 2. **Full Software ISP Implementation:** Implementing all five core ISP stages (Black-Level Correction, Gray-World Auto White Balance, Bilinear Demosaic, 3×3 Color Correction Matrix, and Gamma Correction) from scratch in C++17 rather than delegating color processing to fixed-function silicon.
 3. **Deterministic Reproducibility:** Any reviewer can reproduce the exact build and runtime behavior via `kas build kas-qemu.yml` and `./run-qemu.sh` without requiring identical sensor lighting, focus calibration, or physical ribbon cables.

@@ -1,0 +1,61 @@
+Nov 19 17:40:10 qemuarm64 systemd[1]: Started Camera Software ISP Channel Application (libcamera).
+Nov 19 17:40:11 qemuarm64 isp-app[300]: [0:00:14.425975894] [300]  INFO Camera camera_manager.cpp:327 libcamera v0.4.0+dirty (2026-11-18T15:14:06UTC)
+Nov 19 17:40:11 qemuarm64 isp-app[300]: [0:00:14.728953289] [310]  WARN CameraSensorProperties camera_sensor_properties.cpp:458 No static properties available for 'Sensor B'
+Nov 19 17:40:11 qemuarm64 isp-app[300]: [0:00:14.729793424] [310]  WARN CameraSensorProperties camera_sensor_properties.cpp:460 Please consider updating the camera sensor properties database
+Nov 19 17:40:11 qemuarm64 isp-app[300]: [0:00:14.730232811] [310]  WARN CameraSensor camera_sensor_legacy.cpp:594 'Sensor B': Failed to retrieve the camera location
+Nov 19 17:40:11 qemuarm64 isp-app[300]: [0:00:14.730532300] [310]  WARN CameraSensor camera_sensor_legacy.cpp:616 'Sensor B': Rotation control not available, default to 0 degrees
+Nov 19 17:40:12 qemuarm64 isp-app[300]: Selected camera: platform/vimc.0 Sensor B
+Nov 19 17:40:12 qemuarm64 isp-app[300]: --- Supported Camera Controls (ControlInfoMap) ---
+Nov 19 17:40:12 qemuarm64 isp-app[300]:   Brightness : [-1.000000..1.000000]
+Nov 19 17:40:12 qemuarm64 isp-app[300]:   Contrast : [0.000000..2.000000]
+Nov 19 17:40:12 qemuarm64 isp-app[300]:   Saturation : [0.000000..2.000000]
+Nov 19 17:40:12 qemuarm64 isp-app[300]: Validated stream: 1920x1080-RGB888 (stride=5760)
+Nov 19 17:40:12 qemuarm64 isp-app[300]: [0:00:14.847197997] [300]  INFO Camera camera.cpp:1202 configuring streams: (0) 1920x1080-RGB888
+Nov 19 17:40:17 qemuarm64 isp-app[300]: Allocated 4 DMABUF FrameBuffers
+Nov 19 17:40:17 qemuarm64 isp-app[300]: Capture + Software ISP loop started (SIGUSR1 or /tmp/snapshot triggers PNG/RAW capture)
+Nov 19 17:40:17 qemuarm64 isp-app[300]: [METRICS] frames=6 fps=1.14 avg_isp_ms=617.28ms
+Nov 19 17:40:22 qemuarm64 isp-app[300]: [METRICS] frames=15 fps=1.73 avg_isp_ms=559.21ms
+Nov 19 17:40:28 qemuarm64 isp-app[300]: [METRICS] frames=24 fps=1.69 avg_isp_ms=549.78ms
+Nov 19 17:40:33 qemuarm64 isp-app[300]: [METRICS] frames=33 fps=1.73 avg_isp_ms=544.07ms
+Nov 19 17:40:38 qemuarm64 isp-app[300]: [METRICS] frames=42 fps=1.80 avg_isp_ms=535.37ms
+Nov 19 17:40:43 qemuarm64 isp-app[300]: [METRICS] frames=52 fps=1.81 avg_isp_ms=528.72ms
+Nov 19 17:40:49 qemuarm64 isp-app[300]: [METRICS] frames=62 fps=1.80 avg_isp_ms=524.75ms
+Nov 19 17:40:54 qemuarm64 isp-app[300]: [METRICS] frames=71 fps=1.75 avg_isp_ms=524.28ms
+Nov 19 17:40:59 qemuarm64 isp-app[300]: [METRICS] frames=80 fps=1.68 avg_isp_ms=524.81ms
+Nov 19 17:41:04 qemuarm64 isp-app[300]: [METRICS] frames=89 fps=1.78 avg_isp_ms=523.54ms
+Nov 19 17:41:10 qemuarm64 isp-app[300]: [METRICS] frames=99 fps=1.81 avg_isp_ms=521.13ms
+Nov 19 17:41:15 qemuarm64 isp-app[300]: [METRICS] frames=109 fps=1.84 avg_isp_ms=518.48ms
+Nov 19 17:41:21 qemuarm64 isp-app[300]: [METRICS] frames=119 fps=1.82 avg_isp_ms=516.30ms
+Nov 19 17:41:26 qemuarm64 isp-app[300]: [METRICS] frames=128 fps=1.80 avg_isp_ms=515.41ms
+Nov 19 17:41:31 qemuarm64 isp-app[300]: [METRICS] frames=137 fps=1.79 avg_isp_ms=515.00ms
+Nov 19 17:41:36 qemuarm64 isp-app[300]: [METRICS] frames=147 fps=1.81 avg_isp_ms=514.15ms
+Nov 19 17:41:42 qemuarm64 isp-app[300]: [METRICS] frames=157 fps=1.82 avg_isp_ms=513.07ms
+Nov 19 17:41:47 qemuarm64 isp-app[300]: [METRICS] frames=167 fps=1.81 avg_isp_ms=511.71ms
+Nov 19 17:41:53 qemuarm64 isp-app[300]: [METRICS] frames=176 fps=1.71 avg_isp_ms=512.55ms
+Nov 19 17:41:58 qemuarm64 isp-app[300]: [METRICS] frames=185 fps=1.66 avg_isp_ms=514.64ms
+Nov 19 17:42:03 qemuarm64 isp-app[300]: [METRICS] frames=193 fps=1.58 avg_isp_ms=516.76ms
+Nov 19 17:42:08 qemuarm64 isp-app[300]: [METRICS] frames=202 fps=1.71 avg_isp_ms=517.31ms
+Nov 19 17:42:14 qemuarm64 isp-app[300]: [METRICS] frames=211 fps=1.71 avg_isp_ms=517.79ms
+Nov 19 17:42:19 qemuarm64 isp-app[300]: [METRICS] frames=220 fps=1.77 avg_isp_ms=517.61ms
+Nov 19 17:42:24 qemuarm64 isp-app[300]: [METRICS] frames=229 fps=1.73 avg_isp_ms=517.77ms
+Nov 19 17:42:26 qemuarm64 isp-app[300]: [SNAPSHOT] Saved /var/lib/isp-app/snapshot_231.png and /var/lib/isp-app/snapshot_raw_231.pgm
+Nov 19 17:42:29 qemuarm64 isp-app[300]: [METRICS] frames=237 fps=1.48 avg_isp_ms=518.18ms
+Nov 19 17:42:35 qemuarm64 isp-app[300]: [METRICS] frames=246 fps=1.71 avg_isp_ms=518.32ms
+Nov 19 17:42:40 qemuarm64 isp-app[300]: [METRICS] frames=255 fps=1.72 avg_isp_ms=518.45ms
+Nov 19 17:42:45 qemuarm64 isp-app[300]: [METRICS] frames=265 fps=1.82 avg_isp_ms=517.88ms
+Nov 19 17:42:51 qemuarm64 isp-app[300]: [METRICS] frames=275 fps=1.84 avg_isp_ms=516.86ms
+Nov 19 17:42:56 qemuarm64 isp-app[300]: [METRICS] frames=285 fps=1.82 avg_isp_ms=516.26ms
+Nov 19 17:43:02 qemuarm64 isp-app[300]: [METRICS] frames=295 fps=1.82 avg_isp_ms=515.59ms
+Nov 19 17:43:07 qemuarm64 isp-app[300]: [METRICS] frames=304 fps=1.76 avg_isp_ms=515.29ms
+Nov 19 17:43:12 qemuarm64 isp-app[300]: [METRICS] frames=313 fps=1.77 avg_isp_ms=515.22ms
+Nov 19 17:43:17 qemuarm64 isp-app[300]: [METRICS] frames=323 fps=1.87 avg_isp_ms=514.47ms
+Nov 19 17:43:23 qemuarm64 isp-app[300]: [METRICS] frames=333 fps=1.84 avg_isp_ms=513.84ms
+Nov 19 17:43:28 qemuarm64 isp-app[300]: [METRICS] frames=343 fps=1.80 avg_isp_ms=513.31ms
+Nov 19 17:43:33 qemuarm64 isp-app[300]: [METRICS] frames=352 fps=1.74 avg_isp_ms=513.55ms
+Nov 19 17:43:39 qemuarm64 isp-app[300]: [METRICS] frames=361 fps=1.72 avg_isp_ms=513.91ms
+Nov 19 17:43:43 qemuarm64 systemd[1]: Stopping Camera Software ISP Channel Application (libcamera)...
+Nov 19 17:43:44 qemuarm64 isp-app[300]: Shutting down cleanly...
+Nov 19 17:43:44 qemuarm64 isp-app[300]: [0:03:47.185909142] [310] ERROR DeviceEnumerator device_enumerator.cpp:172 Removing media device /dev/media0 while still in use
+Nov 19 17:43:44 qemuarm64 systemd[1]: isp-app.service: Deactivated successfully.
+Nov 19 17:43:44 qemuarm64 systemd[1]: Stopped Camera Software ISP Channel Application (libcamera).
+Nov 19 17:43:44 qemuarm64 systemd[1]: isp-app.service: Consumed 5min 36.524s CPU time.

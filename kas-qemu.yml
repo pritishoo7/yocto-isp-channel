@@ -33,8 +33,8 @@ local_conf_header:
     DISTRO_FEATURES:append = " systemd usrmerge"
 
   qemu_hardware: |
-    QB_MEM = "-m 2048"
-    QB_SMP = "-smp 4"
+    QB_MEM = "-m 8192"
+    QB_SMP = "-smp 10"
     QB_SLIRP_OPT = "-netdev user,id=net0,hostfwd=tcp::2222-:22"
 
   licensing: |

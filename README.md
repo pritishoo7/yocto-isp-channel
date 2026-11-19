@@ -115,22 +115,35 @@ journalctl -u isp-app.service -f
 ### Trigger an On-Demand Snapshot (PNG + RAW Bayer PGM)
 Either send `SIGUSR1` or create `/tmp/snapshot`:
 ```bash
+# 1. Trigger an immediate PNG + RAW Bayer (.pgm) snapshot
 kill -USR1 $(pidof isp-app)
-# OR:
-touch /tmp/snapshot
+sleep 2
 
+# 2. Verify snapshot files were created
 ls -lh /var/lib/isp-app/
+
+# 3. Stop isp-app cleanly so ffmpeg writes the final MP4 header (moov atom)
+systemctl stop isp-app.service
+
+# 4. Collect boot log, systemd status, journalctl log, and system metrics
+dmesg > /var/lib/isp-app/boot-dmesg.log
+uptime > /var/lib/isp-app/stability_report.txt
+free -h >> /var/lib/isp-app/stability_report.txt
+systemctl status isp-app.service --no-pager >> /var/lib/isp-app/stability_report.txt
+journalctl -u isp-app.service --no-pager > /var/lib/isp-app/isp-app-journal.log
+
 ```
 
 ### Finalize Video & Copy Artifacts to Host
-Stop the service cleanly so `ffmpeg` flushes the MP4 container header, then pull artifacts via `scp`:
+St container header, then pull artifacts via `scp`:
 ```bash
 # Inside QEMU:
 systemctl stop isp-app.service
 passwd   # Set a temporary password (e.g., root) for SSH transfer
 
 # On Host PC:
-scp -P 2222 root@localhost:/var/lib/isp-app/* ./artifacts/
+ scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -P 2222 root@localhost:/var/lib/isp-app/* ~/yocto-isp-channel/artifacts/
+ 
 ```
 
 ---

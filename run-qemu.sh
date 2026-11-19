@@ -4,8 +4,8 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "${SCRIPT_DIR}"
 
-export QB_MEM="${QB_MEM:--m 2048}"
-export QB_SMP="${QB_SMP:--smp 4}"
+export QB_MEM="${QB_MEM:--m 4096}"
+export QB_SMP="${QB_SMP:--smp 8}"
 export QB_SLIRP_OPT="${QB_SLIRP_OPT:--netdev user,id=net0,hostfwd=tcp::2222-:22}"
 
 echo "Starting Track Q QEMU (qemuarm64) isp-image..."

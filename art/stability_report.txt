@@ -1,0 +1,22 @@
+ 17:44:00 up 4 min,  load average: 2.69, 1.73, 0.74
+              total        used        free      shared  buff/cache   available
+Mem:        8200292       74996     8038252       12712       87044     8041444
+Swap:             0           0           0
+* isp-app.service - Camera Software ISP Channel Application (libcamera)
+     Loaded: loaded (/usr/lib/systemd/system/isp-app.service; enabled; preset: enabled)
+     Active: inactive (dead) since Thu 2026-11-19 17:43:44 UTC; 15s ago
+   Duration: 3min 32.612s
+    Process: 300 ExecStart=/usr/bin/isp-app (code=exited, status=0/SUCCESS)
+   Main PID: 300 (code=exited, status=0/SUCCESS)
+        CPU: 5min 36.524s
+
+Nov 19 17:43:23 qemuarm64 isp-app[300]: [METRICS] frames=333 fps=1.84 avg_isp_ms=513.84ms
+Nov 19 17:43:28 qemuarm64 isp-app[300]: [METRICS] frames=343 fps=1.80 avg_isp_ms=513.31ms
+Nov 19 17:43:33 qemuarm64 isp-app[300]: [METRICS] frames=352 fps=1.74 avg_isp_ms=513.55ms
+Nov 19 17:43:39 qemuarm64 isp-app[300]: [METRICS] frames=361 fps=1.72 avg_isp_ms=513.91ms
+Nov 19 17:43:43 qemuarm64 systemd[1]: Stopping Camera Software ISP Channel Application (libcamera)...
+Nov 19 17:43:44 qemuarm64 isp-app[300]: Shutting down cleanly...
+Nov 19 17:43:44 qemuarm64 isp-app[300]: [0:03:47.185909142] [310] ERROR DeviceEnumerator device_enumerator.cpp:172 Removing media device /dev/media0 while still in use
+Nov 19 17:43:44 qemuarm64 systemd[1]: isp-app.service: Deactivated successfully.
+Nov 19 17:43:44 qemuarm64 systemd[1]: Stopped Camera Software ISP Channel Application (libcamera).
+Nov 19 17:43:44 qemuarm64 systemd[1]: isp-app.service: Consumed 5min 36.524s CPU time.
