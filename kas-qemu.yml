@@ -1,0 +1,41 @@
+header:
+  version: 14
+
+distro: poky
+machine: qemuarm64
+
+target:
+  - isp-image
+
+repos:
+  poky:
+    url: https://yoctoproject.org
+    commit: 6b7c1066f778db5a6b3e35400617b10342988fa8
+    layers:
+      meta:
+      meta-poky:
+      meta-yocto-bsp:
+
+  meta-openembedded:
+    url: https://openembedded.org
+    commit: 2db6aece32c7f8ebf6015b468e1b4e21de072e3b
+    layers:
+      meta-oe:
+      meta-python:
+      meta-multimedia:
+
+  meta-isp-assignment:
+    path: meta-isp-assignment
+
+local_conf_header:
+  init_systemd: |
+    INIT_MANAGER = "systemd"
+    DISTRO_FEATURES:append = " systemd usrmerge"
+
+  qemu_hardware: |
+    QB_MEM = "-m 2048"
+    QB_SMP = "-smp 4"
+    QB_SLIRP_OPT = "-netdev user,id=net0,hostfwd=tcp::2222-:22"
+
+  licensing: |
+    LICENSE_FLAGS_ACCEPTED += "commercial"

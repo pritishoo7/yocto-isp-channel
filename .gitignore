@@ -1,0 +1,14 @@
+# Ignore Yocto build output, cache, and downloads
+build/
+sstate-cache/
+downloads/
+
+# Ignore upstream repositories cloned automatically by kas
+poky/
+meta-openembedded/
+meta-raspberrypi/
+
+# Ignore editor/OS temporary files
+*.swp
+*~
+.DS_Store

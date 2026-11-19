@@ -1,0 +1,14 @@
+[Unit]
+Description=Camera Software ISP Channel Application (libcamera)
+After=systemd-modules-load.service network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/isp-app
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
