@@ -1,0 +1,25 @@
+ 17:50:21 up 4 min,  load average: 2.28, 1.51, 0.67
+              total        used        free      shared  buff/cache   available
+Mem:        8200292      231732     7878588       12716       89972     7884284
+Swap:             0           0           0
+* isp-app.service - Camera Software ISP Channel Application (libcamera)
+     Loaded: loaded (/usr/lib/systemd/system/isp-app.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-11-21 17:45:54 UTC; 4min 26s ago
+   Main PID: 305 (isp-app)
+      Tasks: 47 (limit: 9604)
+     Memory: 143.9M (peak: 156.2M)
+        CPU: 7min 28.131s
+     CGroup: /system.slice/isp-app.service
+             |-305 /usr/bin/isp-app
+             `-328 ffmpeg -y -loglevel error -f rawvideo -pix_fmt rgb24 -s 1920x1080 -r 10 -i - -c:v mpeg4 -q:v 5 -pix_fmt yuv420p /var/lib/isp-app/output.mp4
+
+Nov 21 17:49:33 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=530 fps=2.41 avg_isp_ms=72.64ms
+Nov 21 17:49:38 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=543 fps=2.39 avg_isp_ms=72.70ms
+Nov 21 17:49:43 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=556 fps=2.51 avg_isp_ms=72.71ms
+Nov 21 17:49:49 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=569 fps=2.46 avg_isp_ms=72.72ms
+Nov 21 17:49:54 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=582 fps=2.53 avg_isp_ms=72.68ms
+Nov 21 17:50:00 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=595 fps=2.52 avg_isp_ms=72.66ms
+Nov 21 17:50:05 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=608 fps=2.50 avg_isp_ms=72.66ms
+Nov 21 17:50:10 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=621 fps=2.50 avg_isp_ms=72.72ms
+Nov 21 17:50:15 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=634 fps=2.49 avg_isp_ms=72.71ms
+Nov 21 17:50:21 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=647 fps=2.43 avg_isp_ms=72.76ms

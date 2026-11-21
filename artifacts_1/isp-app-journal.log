@@ -1,0 +1,66 @@
+Nov 21 17:45:54 qemuarm64 systemd[1]: Started Camera Software ISP Channel Application (libcamera).
+Nov 21 17:45:55 qemuarm64 isp-app[305]: [0:00:11.023489625] [305]  INFO Camera camera_manager.cpp:327 libcamera v0.4.0+dirty (2026-11-18T15:14:06UTC)
+Nov 21 17:45:55 qemuarm64 isp-app[305]: [0:00:11.177572727] [311]  WARN CameraSensorProperties camera_sensor_properties.cpp:458 No static properties available for 'Sensor B'
+Nov 21 17:45:55 qemuarm64 isp-app[305]: [0:00:11.177981318] [311]  WARN CameraSensorProperties camera_sensor_properties.cpp:460 Please consider updating the camera sensor properties database
+Nov 21 17:45:55 qemuarm64 isp-app[305]: [0:00:11.178271715] [311]  WARN CameraSensor camera_sensor_legacy.cpp:594 'Sensor B': Failed to retrieve the camera location
+Nov 21 17:45:55 qemuarm64 isp-app[305]: [0:00:11.178549065] [311]  WARN CameraSensor camera_sensor_legacy.cpp:616 'Sensor B': Rotation control not available, default to 0 degrees
+Nov 21 17:45:55 qemuarm64 isp-app[305]: Selected camera: platform/vimc.0 Sensor B
+Nov 21 17:45:55 qemuarm64 isp-app[305]: --- Supported Camera Controls (ControlInfoMap) ---
+Nov 21 17:45:55 qemuarm64 isp-app[305]:   Brightness : [-1.000000..1.000000]
+Nov 21 17:45:55 qemuarm64 isp-app[305]:   Contrast : [0.000000..2.000000]
+Nov 21 17:45:55 qemuarm64 isp-app[305]:   Saturation : [0.000000..2.000000]
+Nov 21 17:45:55 qemuarm64 isp-app[305]: Validated stream: 1920x1080-RGB888 (stride=5760)
+Nov 21 17:45:55 qemuarm64 isp-app[305]: [0:00:11.228521402] [305]  INFO Camera camera.cpp:1202 configuring streams: (0) 1920x1080-RGB888
+Nov 21 17:46:00 qemuarm64 isp-app[305]: SoftwareIsp initialized with 10 worker threadsAllocated 4 DMABUF FrameBuffers
+Nov 21 17:46:00 qemuarm64 isp-app[305]: Capture + Multithreaded Software ISP loop started (SIGUSR1 or /tmp/snapshot triggers PNG/RAW capture)
+Nov 21 17:46:00 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=12 fps=2.31 avg_isp_ms=81.49ms
+Nov 21 17:46:05 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=25 fps=2.59 avg_isp_ms=75.38ms
+Nov 21 17:46:10 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=38 fps=2.51 avg_isp_ms=73.77ms
+Nov 21 17:46:16 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=51 fps=2.50 avg_isp_ms=73.39ms
+Nov 21 17:46:21 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=64 fps=2.48 avg_isp_ms=72.91ms
+Nov 21 17:46:27 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=77 fps=2.47 avg_isp_ms=72.96ms
+Nov 21 17:46:32 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=89 fps=2.39 avg_isp_ms=73.56ms
+Nov 21 17:46:37 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=101 fps=2.34 avg_isp_ms=74.37ms
+Nov 21 17:46:42 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=113 fps=2.36 avg_isp_ms=74.91ms
+Nov 21 17:46:48 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=126 fps=2.38 avg_isp_ms=75.20ms
+Nov 21 17:46:53 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=139 fps=2.48 avg_isp_ms=74.82ms
+Nov 21 17:46:58 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=152 fps=2.47 avg_isp_ms=74.70ms
+Nov 21 17:47:04 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=165 fps=2.52 avg_isp_ms=74.31ms
+Nov 21 17:47:09 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=178 fps=2.57 avg_isp_ms=73.92ms
+Nov 21 17:47:14 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=191 fps=2.48 avg_isp_ms=73.61ms
+Nov 21 17:47:19 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=204 fps=2.49 avg_isp_ms=73.66ms
+Nov 21 17:47:25 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=217 fps=2.50 avg_isp_ms=73.59ms
+Nov 21 17:47:30 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=230 fps=2.52 avg_isp_ms=73.50ms
+Nov 21 17:47:36 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=243 fps=2.52 avg_isp_ms=73.39ms
+Nov 21 17:47:41 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=256 fps=2.54 avg_isp_ms=73.25ms
+Nov 21 17:47:46 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=269 fps=2.46 avg_isp_ms=73.15ms
+Nov 21 17:47:51 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=282 fps=2.50 avg_isp_ms=73.05ms
+Nov 21 17:47:57 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=295 fps=2.41 avg_isp_ms=73.29ms
+Nov 21 17:48:02 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=308 fps=2.43 avg_isp_ms=73.23ms
+Nov 21 17:48:07 qemuarm64 isp-app[305]: [SNAPSHOT] Saved /var/lib/isp-app/snapshot_317.png and /var/lib/isp-app/snapshot_raw_317.pgm
+Nov 21 17:48:08 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=321 fps=2.54 avg_isp_ms=73.22ms
+Nov 21 17:48:13 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=334 fps=2.49 avg_isp_ms=73.18ms
+Nov 21 17:48:18 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=347 fps=2.44 avg_isp_ms=73.23ms
+Nov 21 17:48:23 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=360 fps=2.53 avg_isp_ms=73.13ms
+Nov 21 17:48:29 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=373 fps=2.50 avg_isp_ms=73.08ms
+Nov 21 17:48:34 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=386 fps=2.43 avg_isp_ms=73.20ms
+Nov 21 17:48:40 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=399 fps=2.51 avg_isp_ms=73.15ms
+Nov 21 17:48:45 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=412 fps=2.56 avg_isp_ms=73.03ms
+Nov 21 17:48:50 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=425 fps=2.46 avg_isp_ms=73.02ms
+Nov 21 17:48:55 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=438 fps=2.53 avg_isp_ms=72.93ms
+Nov 21 17:49:00 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=451 fps=2.48 avg_isp_ms=72.88ms
+Nov 21 17:49:06 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=464 fps=2.48 avg_isp_ms=72.79ms
+Nov 21 17:49:12 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=478 fps=2.60 avg_isp_ms=72.66ms
+Nov 21 17:49:17 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=491 fps=2.54 avg_isp_ms=72.61ms
+Nov 21 17:49:22 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=504 fps=2.46 avg_isp_ms=72.60ms
+Nov 21 17:49:27 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=517 fps=2.56 avg_isp_ms=72.56ms
+Nov 21 17:49:33 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=530 fps=2.41 avg_isp_ms=72.64ms
+Nov 21 17:49:38 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=543 fps=2.39 avg_isp_ms=72.70ms
+Nov 21 17:49:43 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=556 fps=2.51 avg_isp_ms=72.71ms
+Nov 21 17:49:49 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=569 fps=2.46 avg_isp_ms=72.72ms
+Nov 21 17:49:54 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=582 fps=2.53 avg_isp_ms=72.68ms
+Nov 21 17:50:00 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=595 fps=2.52 avg_isp_ms=72.66ms
+Nov 21 17:50:05 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=608 fps=2.50 avg_isp_ms=72.66ms
+Nov 21 17:50:10 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=621 fps=2.50 avg_isp_ms=72.72ms
+Nov 21 17:50:15 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=634 fps=2.49 avg_isp_ms=72.71ms
+Nov 21 17:50:21 qemuarm64 isp-app[305]: [METRICS] threads=10 frames=647 fps=2.43 avg_isp_ms=72.76ms
